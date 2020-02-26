@@ -32,6 +32,7 @@
             this.mtxt_Password = new MetroFramework.Controls.MetroTextBox();
             this.mtxt_Login = new MetroFramework.Controls.MetroTextBox();
             this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // mbtnLogin
@@ -132,11 +133,19 @@
             this.metroCheckBox1.UseSelectable = true;
             this.metroCheckBox1.CheckedChanged += new System.EventHandler(this.MetroCheckBox1_CheckedChanged);
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(0, 0);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(75, 23);
+            this.metroButton1.TabIndex = 0;
+            this.metroButton1.UseSelectable = true;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(228, 188);
+            this.ClientSize = new System.Drawing.Size(222, 193);
             this.Controls.Add(this.metroCheckBox1);
             this.Controls.Add(this.mbtnLogin);
             this.Controls.Add(this.mtxt_Password);
@@ -156,5 +165,6 @@
         private MetroFramework.Controls.MetroTextBox mtxt_Password;
         private MetroFramework.Controls.MetroTextBox mtxt_Login;
         private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

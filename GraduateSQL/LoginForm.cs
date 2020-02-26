@@ -25,7 +25,6 @@ namespace GraduateSQL
         SqlDataAdapter adapter;
         string connectionString = "Server=192.168.250.25;Database=graduatesZ;user=Rupit;password=Grib04ek:";
         SqlDataReader sqlReader = null;
-        private SharpUpdater updater;
 
         private void Logger(string login, string password)
         {
@@ -71,8 +70,8 @@ namespace GraduateSQL
         }
         private void LoginForm_Load(object sender, EventArgs e)
         {
-        
-            updater = new SharpUpdater(Assembly.GetExecutingAssembly(), this, new Uri("https://raw.githubusercontent.com/RuslanDaemon/UpdateGraduate/master/vesrion.xml"));
+            SharpUpdater updater = new SharpUpdater(Assembly.GetExecutingAssembly(), this, new Uri("https://raw.githubusercontent.com/RuslanDaemon/UpdateGraduate/master/version.xml"));
+            updater.DoUpdate();
 
             mtxt_Login.Text = Properties.Settings.Default.login;
             mtxt_Password.Text = Properties.Settings.Default.password;
@@ -89,6 +88,6 @@ namespace GraduateSQL
             }
         }
 
-      
+       
     }
 }

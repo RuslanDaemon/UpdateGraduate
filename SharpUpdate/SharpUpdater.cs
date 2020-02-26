@@ -169,7 +169,7 @@ namespace SharpUpdate
 
                     if (showMsgBox)
                     {
-                        MessageBoxEx.Show(ParentForm, "You have the latest versions already!");
+                        MessageBoxEx.Show(ParentForm, "Ваша версия проекта является последней!");
                     }
                     else
                     {
@@ -178,7 +178,7 @@ namespace SharpUpdate
                     }
                 }
 				else
-					MessageBoxEx.Show(ParentForm, "You have the latest versions already!");
+					MessageBoxEx.Show(ParentForm, "Ваша версия проекта является последней!");
 			}
 			else
 				MessageBoxEx.Show(ParentForm, "No update information found!");
