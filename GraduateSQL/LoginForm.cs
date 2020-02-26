@@ -71,7 +71,8 @@ namespace GraduateSQL
         }
         private void LoginForm_Load(object sender, EventArgs e)
         {
-           updater = new SharpUpdater(Assembly.GetExecutingAssembly(), this, new Uri("https://raw.githubusercontent.com/DefPavel/SharpUpdate/master/project.xml"));
+        
+            updater = new SharpUpdater(Assembly.GetExecutingAssembly(), this, new Uri("https://raw.githubusercontent.com/RuslanDaemon/UpdateGraduate/master/project.xml"));
 
             mtxt_Login.Text = Properties.Settings.Default.login;
             mtxt_Password.Text = Properties.Settings.Default.password;
